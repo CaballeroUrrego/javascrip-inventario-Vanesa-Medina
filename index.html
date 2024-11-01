@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/33fd3a8e5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Sistema de Inventario</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="productInput" class="form-control" placeholder="Agregar nuevo producto" aria-label="Agregar nuevo producto">
+            <div class="input-group-append">
+                <button id="addButton" class="btn btn-success" type="button"><i class="fa-sharp fa-light fa-plus"></i></button>
+            </div>
+        </div>
+        <ul id="productList" class="list-group"></ul>
+    </div>
+
+    <script src="/js/inventario.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
