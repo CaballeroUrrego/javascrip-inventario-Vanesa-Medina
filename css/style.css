@@ -1,6 +1,8 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #e0e0e0; /* Color de texto claro */
     margin: 0;
     padding: 20px;
 }
@@ -8,51 +10,75 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: #2d2d2d; /* Fondo más oscuro para el contenedor */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más suave */
 }
 
 h1 {
     text-align: center;
+    color: #ffffff; /* Color blanco para el título */
 }
 
+/* Estilos para el input */
 input[type="text"] {
     width: 70%;
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid #444; /* Borde oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #3d3d3d; /* Fondo oscuro para el input */
+    color: #ffffff; /* Texto blanco */
+    transition: border-color 0.3s; /* Transición suave en el borde */
 }
 
+input[type="text"]:focus {
+    border-color: #28a745; /* Borde verde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilos para los botones */
 button {
-    padding: 10px;
-    background-color: #28a745;
+    padding: 10px 15px; /* Aumentar el padding */
+    background-color: #28a745; /* Color de fondo verde */
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px; /* Bordes redondeados */
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
 }
 
+/* Estilos para la lista */
 ul {
-    list-style: none;
+    list-style: none; /* Sin viñetas */
     padding: 0;
 }
 
 li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 15px; /* Aumentar el padding */
+    border-bottom: 1px solid #444; /* Borde oscuro entre elementos */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espacio entre los botones */
     align-items: center;
+    background-color: #3d3d3d; /* Fondo oscuro para los elementos de la lista */
+    border-radius: 5px; /* Bordes redondeados en los items */
+    margin-bottom: 10px; /* Espacio entre elementos */
+    transition: background-color 0.3s; /* Transición suave en el fondo */
+    color: #218838; /* Color de texto claro para los items */
 }
 
+li:hover {
+    background-color: #444; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Estilo para completados */
 .completed {
-    text-decoration: line-through;
-    color: #888;
+    text-decoration: line-through; /* Texto tachado */
+    color: #888; /* Color más claro para texto completado */
 }
