@@ -2,6 +2,14 @@ Tecnologias utilizadas
 - Libreria de bootstrap
 -libreria de fontawesome
 
+Recomendaciones
+ recorda comentar para no perder el flujo de trabajo de codigo de javascrip acuerdate que estas utilizando un controlador e versiones (git)
+
+
+
+
+
+
  Seleccionar elementos del DOM
 productInput, addButton, y productList son variables que hacen referencia a elementos en el HTML.
 productInput es el campo donde el usuario escribe el nombre del producto.

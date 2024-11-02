@@ -31,7 +31,7 @@ function addProduct() {
 
         // Crear botón para eliminar el producto
         const deleteButton = document.createElement('button'); // Crea un botón de eliminación.
-        deleteButton.textContent = 'Eliminar'; // Texto del botón.
+        deleteButton.textContent = 'Eliminar'; // Texto del botón. recorda comentar para no perder el flujo de trabajo 
         deleteButton.classList.add('btn', 'btn-danger', 'btn-sm', 'ml-2'); // Añade clases de estilo.
         deleteButton.addEventListener('click', function() { // Evento click para eliminar el producto.
             li.remove(); // Elimina el elemento li de la lista.
