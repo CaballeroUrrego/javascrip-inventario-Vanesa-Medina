@@ -32,8 +32,27 @@ function addProduct() {
             this.parentNode.remove(); // Elimina el elemento li completo
         });
 
+        // Crear botón para editar la fecha
+        const editDateButton = document.createElement('button');
+        editDateButton.textContent = 'Editar Fecha';
+        editDateButton.classList.add('btn', 'btn-info', 'btn-sm', 'ml-2');
+        editDateButton.addEventListener('click', function() {
+            const currentDate = new Date().toLocaleDateString();
+            const newDate = prompt("Edita la fecha del producto:", currentDate);
+            if (newDate) {
+                li.querySelector('.date').textContent = newDate;
+            }
+        });
+
+        // Crear elemento span para mostrar la fecha actual
+        const dateSpan = document.createElement('span');
+        dateSpan.className = 'date';
+        dateSpan.textContent = new Date().toLocaleDateString();
+
         li.appendChild(editButton);
         li.appendChild(deleteButton);
+        li.appendChild(editDateButton);
+        li.appendChild(dateSpan);
         productList.appendChild(li);
         productInput.value = ''; // Limpiar el campo de entrada
         
