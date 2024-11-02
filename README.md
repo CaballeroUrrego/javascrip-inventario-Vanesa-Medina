@@ -22,4 +22,4 @@ Botón para editar la fecha de vencimiento
 editDateButton: Crea un botón que permite cambiar la fecha de vencimiento del producto. Al hacer clic, se abre un cuadro de diálogo donde el usuario introduce una nueva fecha en formato YYYY-MM-DD.
 Después de actualizar la fecha en el dateSpan, la función checkExpirationDate verifica si la nueva fecha de vencimiento es cercana.
 Agregar elementos al producto
-Después de crear los botones y el span, estos elementos se añaden al <li>.
+Después de crear los botones y el span, estos elementos se añaden al <li>.```javascript
