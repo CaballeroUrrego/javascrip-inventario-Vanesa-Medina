@@ -1,8 +1,8 @@
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* Fondo oscuro */
-    color: #e0e0e0; /* Color de texto claro */
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Fondo aún más oscuro */
+    color: #e0e0e0; /* Texto claro */
     margin: 0;
     padding: 20px;
 }
@@ -10,75 +10,90 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: #2d2d2d; /* Fondo más oscuro para el contenedor */
+    background: #1f1f1f; /* Fondo oscuro para el contenedor */
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más suave */
+    border-radius: 12px; /* Bordes ligeramente más redondeados */
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6); /* Sombra más marcada */
 }
 
 h1 {
     text-align: center;
     color: #ffffff; /* Color blanco para el título */
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 /* Estilos para el input */
 input[type="text"] {
     width: 70%;
-    padding: 10px;
+    padding: 12px;
     margin-right: 10px;
-    border: 1px solid #444; /* Borde oscuro */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #3d3d3d; /* Fondo oscuro para el input */
+    border: 1px solid #555; /* Borde oscuro */
+    border-radius: 6px; /* Bordes redondeados */
+    background-color: #2a2a2a; /* Fondo oscuro para el input */
     color: #ffffff; /* Texto blanco */
-    transition: border-color 0.3s; /* Transición suave en el borde */
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
 input[type="text"]:focus {
-    border-color: #28a745; /* Borde verde al enfocar */
-    outline: none; /* Sin contorno */
+    border-color: #34c759; /* Borde verde al enfocar */
+    background-color: #333333; /* Fondo ligeramente más claro */
+    outline: none;
 }
 
 /* Estilos para los botones */
 button {
-    padding: 10px 15px; /* Aumentar el padding */
-    background-color: #28a745; /* Color de fondo verde */
-    color: white;
+    padding: 10px 16px;
+    background-color: #34c759; /* Color verde */
+    color: #ffffff;
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #218838; /* Verde más oscuro al pasar el mouse */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: #2d8b47; /* Verde más oscuro al pasar el mouse */
+    transform: translateY(-2px);
 }
 
 /* Estilos para la lista */
 ul {
-    list-style: none; /* Sin viñetas */
+    list-style: none;
     padding: 0;
 }
 
 li {
-    padding: 15px; /* Aumentar el padding */
-    border-bottom: 1px solid #444; /* Borde oscuro entre elementos */
+    padding: 14px;
+    border-bottom: 1px solid #444; /* Borde entre elementos */
     display: flex;
-    justify-content: space-between; /* Espacio entre los botones */
+    justify-content: space-between;
     align-items: center;
-    background-color: #3d3d3d; /* Fondo oscuro para los elementos de la lista */
-    border-radius: 5px; /* Bordes redondeados en los items */
-    margin-bottom: 10px; /* Espacio entre elementos */
-    transition: background-color 0.3s; /* Transición suave en el fondo */
-    color: #218838; /* Color de texto claro para los items */
+    background-color: #2a2a2a; /* Fondo oscuro */
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+    color: #b3e5ab; /* Color claro */
 }
 
 li:hover {
-    background-color: #444; /* Fondo más oscuro al pasar el mouse */
+    background-color: #333; /* Fondo más oscuro al pasar el mouse */
+    transform: scale(1.02); /* Efecto de agrandamiento */
 }
 
-/* Estilo para completados */
+/* Estilo para productos completados */
 .completed {
-    text-decoration: line-through; /* Texto tachado */
-    color: #888; /* Color más claro para texto completado */
+    text-decoration: line-through;
+    color: #888888; /* Color más claro */
+}
+
+/* Estilo para botones específicos */
+.btn {
+    margin-left: 5px;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #999999; /* Color gris claro para la fecha */
 }
