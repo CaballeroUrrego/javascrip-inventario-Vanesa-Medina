@@ -7,7 +7,7 @@ Recomendaciones
 
 Verificando aqui esta el link de github de la enidencia: https://github.com/CaballeroUrrego/javascrip-inventario-Vanesa-Medina/blob/main/README.md
 
-
+ la pagina web:https://unrivaled-donut-c5372a.netlify.app/
 
 
  Seleccionar elementos del DOM
