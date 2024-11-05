@@ -5,7 +5,7 @@ Tecnologias utilizadas
 Recomendaciones
  recorda comentar para no perder el flujo de trabajo de codigo de javascrip acuerdate que estas utilizando un controlador e versiones (git)
 
-
+Verificando aqui esta el link de github de la enidencia: https://github.com/CaballeroUrrego/javascrip-inventario-Vanesa-Medina/blob/main/README.md
 
 
 
