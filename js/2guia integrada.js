@@ -125,3 +125,5 @@ console.log("\n=== Pruebas de Scope ===");
 ejemploVar();
 ejemploLet();
 ejemploConst();
+
+
