@@ -1,79 +1,69 @@
-const nombre = "laptop";
-let precio = 300; // Corregido de 2000 a 300
-let cantidad = 15; // Corregido de 10 a 15
-let descuento = 0.2;
+// Definimos algunas variables iniciales para un producto
+const nombre = "laptop"; // Nombre del producto
+let precio = 2000; // Precio del producto
+let cantidad = 10; // Cantidad disponible del producto
+let descuento = 0.2; // Descuento aplicado (20%)
 
-/**
- * Calcula el total del producto con descuento.
- * @param {number} precio - Precio base del producto
- * @param {number} cantidad - Cantidad del producto
- * @param {number} descuento - Porcentaje de descuento
- * @returns {number} Total del producto después del descuento
- */
+// Función que calcula el total a pagar por el producto
 function calcularTotal(precio, cantidad, descuento) {
-    return precio * cantidad * (2 - descuento);
+    // Se calcula el total multiplicando el precio por la cantidad y aplicando el descuento
+    return precio * cantidad * (1 - descuento); // Se usa (1 - descuento) para obtener el precio final
 }
 
+// Objeto que representa un producto
 const producto = {
-    nombre: 'laptop',
-    precio: 300,
-    cantidad: 15,
-    descuento: 0.2,
-calcularTotal: function() {
-    /**
-         * Calcula el total del producto con descuento.
-         * @returns {number} Total del producto después del descuento
-     */
-    try {
-        if (typeof this.precio !== 'number' || typeof this.cantidad !== 'number' || typeof this.descuento !== 'number') {
-            throw new Error("Valores no válidos. Todos deben ser números.");
+    nombre: 'laptop', // Nombre del producto
+    precio: 300, // Precio del producto
+    cantidad: 15, // Cantidad disponible del producto
+    descuento: 0.2, // Descuento aplicado (20%)
+    
+    // Método para calcular el total del producto
+    calcularTotal: function() {
+        try {
+            // Verificamos que los valores de precio, cantidad y descuento sean números
+            if (typeof this.precio !== 'number' || typeof this.cantidad !== 'number' || typeof this.descuento !== 'number') {
+                throw new Error("Valores no válidos. Todos deben ser números."); // Lanzamos un error si no son válidos
+            }
+            // Calculamos y retornamos el total aplicando el descuento
+            return this.precio * this.cantidad * (1 - this.descuento); // Se usa (1 - descuento) para obtener el precio final
+        } catch (error) {
+            // Si ocurre un error, se muestra en la consola y se retorna 0
+            console.error(`Error: ${error.message}`);
+            return 0;
         }
-        return this.precio * this.cantidad * (2 - this.descuento);
-    } catch (error) {
-        console.error(`Error: ${error.message}`);
-        return 0;
-    }
     },
-
-    /**
-         * Retorna un string con detalles del producto.
-         * @returns {string} Detalles del producto en formato de cadena.
-     */
-detalles: function() {
-    return `Producto: $${this.nombre}, Precio: $${this.precio}, Cantidad: ${this.cantidad}, Descuento: ${this.descuento * 100}%`;
+    
+    // Método para mostrar los detalles del producto
+    detalles: function() {
+        // Retornamos una cadena con la información del producto
+        return "Producto: " + this.nombre + ", Precio: $" + this.precio + ", Cantidad: " + this.cantidad + ", Descuento: " + (this.descuento * 100) + "%";
     }
 };
 
-// Validar que los valores sean números
+// Intentamos asignar un valor no válido a la propiedad precio
+producto.precio = "mil"; // El valor es incorrecto porque debería ser un número
+// Mostramos el total calculado, aunque habrá un error debido al valor no válido
+console.log(`Total con error: ${producto.calcularTotal()}`);
+
+// Función para validar que los datos del producto sean correctos
 function validarProducto(producto) {
     try {
+        // Verificamos que precio, cantidad y descuento sean números
         if (typeof producto.precio !== 'number' ||
             typeof producto.cantidad !== 'number' ||
             typeof producto.descuento !== 'number') {
-            throw new Error("Datos del producto no válidos.");
+            throw new Error("Datos del producto no válidos."); // Lanzamos un error si no son válidos
         }
+        // Si todo es válido, mostramos un mensaje de validación
         console.log("Producto válido.");
     } catch (error) {
+        // Si ocurre un error, se muestra en la consola
         console.error(error.message);
     }
 }
 
-validarProducto(producto);
+// Llamamos a la función de validación para verificar el producto
+validarProducto(producto); // Llamada a la función para validar el producto
 
-console.log(`Total con error: ${producto.calcularTotal()}`);
-  }
-
-  function validarProducto(producto) {
-    try {
-      if (typeof producto.precio !== 'number' ||
-          typeof producto.cantidad !== 'number' ||
-          typeof producto.descuento !== 'number') {
-        throw new Error("Datos del producto no válidos.");
-      }
-      console.log("Producto válido.");
-    } catch (error) {
-      console.error(error.message);
-    }
-  }
-  
-  validarProducto(producto); // Llamada a la función (asumiendo que 'producto' existe)
+// Mostramos los detalles del producto utilizando el método 'detalles'
+console.log(producto.detalles());
