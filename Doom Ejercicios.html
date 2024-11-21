@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM y Eventos</title>
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="/css/Doom.css">
+</head>
+<body>
+    <h1>Ejercicios DOM y Eventos</h1>
+    <div class="container">
+        <!-- Ejercicio 1: Selección y modificación de elementos -->
+        <p id="texto-ejemplo">Texto inicial</p>
+        <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+        <!-- Ejercicio 2: Modificar estilos de un elemento -->
+        <p id="estilo-ejemplo">Este texto cambiará de estilo</p>
+        <button onclick="cambiarEstilo()">Cambiar Estilo</button>
+
+        <!-- Ejercicio 3: Eventos de teclado -->
+        <input type="text" placeholder="Escribe algo..." oninput="mostrarTexto(event)" />
+        <p id="texto-dinamico"></p>
+
+        <!-- Ejercicio 4: Lista interactiva -->
+        <input type="text" id="nuevo-item" placeholder="Nuevo elemento de la lista" />
+        <button onclick="agregarElemento()">Agregar a la Lista</button>
+        <ul id="lista-interactiva"></ul>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="/js/Doom.js"></script>
+</body>
+</html>
+
