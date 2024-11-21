@@ -1,0 +1,58 @@
+/* BODY - Configuración general del contenedor principal */
+body {
+    display: flex; /* Configura el cuerpo para usar un sistema de diseño flexible (Flexbox). */
+    justify-content: center; /* Centra horizontalmente el contenido (la calculadora) en el viewport. */
+    align-items: center; /* Centra verticalmente el contenido en el viewport. */
+    height: 100vh; /* Configura la altura del contenedor al 100% de la altura del viewport. */
+    background-color: #f0f0f0; /* Establece un color de fondo claro para toda la página. */
+    font-family: Arial, sans-serif; /* Define la fuente principal como Arial o una alternativa sans-serif. */
+}
+
+
+/* DISPLAY - Estilo del campo donde se muestra la operación y el resultado */
+#display {
+    width: 100%; /* El campo ocupará el ancho completo del contenedor. */
+    height: 60px; /* Altura fija de 60px. */
+    margin-bottom: 15px; /* Espaciado inferior para separar del grupo de botones. */
+    text-align: right; /* Alinea el texto a la derecha (útil para números). */
+    font-size: 28px; /* Tamaño de fuente grande para mejor visibilidad. */
+    padding: 10px; /* Espaciado interno para el texto dentro del campo. */
+    background-color: #ecf0f1; /* Color de fondo claro para contraste con el texto. */
+    border: none; /* Elimina cualquier borde predeterminado del navegador. */
+    border-radius: 5px; /* Bordes ligeramente redondeados. */
+}
+
+/* BOTONES - Diseño del área de botones */
+.botones {
+    display: grid; /* Utiliza un sistema de diseño basado en cuadrícula. */
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas de igual tamaño. */
+    gap: 10px; /* Espaciado entre los botones. */
+}
+
+/* BOTÓN - Estilo base para todos los botones */
+button {
+    padding: 15px; /* Espaciado interno para hacer los botones más grandes. */
+    font-size: 20px; /* Texto grande para facilidad de lectura. */
+    background-color: #3498db; /* Fondo azul para los botones. */
+    color: white; /* Texto blanco para contraste. */
+    border: none; /* Elimina bordes predeterminados. */
+    border-radius: 5px; /* Bordes ligeramente redondeados. */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón. */
+    transition: all 0.3s ease; /* Suaviza las transiciones (color y tamaño) en hover. */
+}
+
+/* BOTÓN - Estilo para cuando se pasa el cursor sobre un botón */
+button:hover {
+    background-color: #2980b9; /* Color azul más oscuro en hover. */
+    transform: scale(1.05); /* Agranda ligeramente el botón al pasar el cursor. */
+}
+
+/* BOTÓN LIMPIAR - Estilo específico para el botón de limpiar */
+#limpiar {
+    background-color: #e74c3c; /* Fondo rojo para diferenciarlo de otros botones. */
+}
+
+/* BOTÓN LIMPIAR (HOVER) - Cambios al pasar el cursor */
+#limpiar:hover {
+    background-color: #c0392b; /* Color rojo más oscuro en hover. */
+}
