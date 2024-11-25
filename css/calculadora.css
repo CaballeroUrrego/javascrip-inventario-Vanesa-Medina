@@ -4,7 +4,7 @@ body {
     justify-content: center; /* Centra horizontalmente el contenido (la calculadora) en el viewport. */
     align-items: center; /* Centra verticalmente el contenido en el viewport. */
     height: 100vh; /* Configura la altura del contenedor al 100% de la altura del viewport. */
-    background-color: #f0f0f0; /* Establece un color de fondo claro para toda la página. */
+    background-color: #1ec9e8; /* Establece un color de fondo claro para toda la página. */
     font-family: Arial, sans-serif; /* Define la fuente principal como Arial o una alternativa sans-serif. */
 }
 
@@ -17,7 +17,7 @@ body {
     text-align: right; /* Alinea el texto a la derecha (útil para números). */
     font-size: 28px; /* Tamaño de fuente grande para mejor visibilidad. */
     padding: 10px; /* Espaciado interno para el texto dentro del campo. */
-    background-color: #ecf0f1; /* Color de fondo claro para contraste con el texto. */
+    background-color: #ecf1ef; /* Color de fondo claro para contraste con el texto. */
     border: none; /* Elimina cualquier borde predeterminado del navegador. */
     border-radius: 5px; /* Bordes ligeramente redondeados. */
 }
@@ -43,7 +43,7 @@ button {
 
 /* BOTÓN - Estilo para cuando se pasa el cursor sobre un botón */
 button:hover {
-    background-color: #2980b9; /* Color azul más oscuro en hover. */
+    background-color: #0030cd; /* Color azul más oscuro en hover. */
     transform: scale(1.05); /* Agranda ligeramente el botón al pasar el cursor. */
 }
 
