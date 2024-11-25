@@ -4,10 +4,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #d08b02;
 }
 h1 {
-    color: #333;
+    color: #aa3b3b;
 }
 .container {
     max-width: 600px;
@@ -15,7 +15,7 @@ h1 {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(72, 96, 47, 0.1);
     margin-top: 20px;
 }
 button, input {
