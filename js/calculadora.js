@@ -21,7 +21,7 @@
         return function() {
             try {
                 // Utiliza eval para evaluar la expresión matemática y muestra el resultado.
-                display.value = eval(display.value);
+                display.value = eval(display.value);//linea de evaluar la expresión matemática
             } catch(error) {
                 // Si eval genera un error (por ejemplo, por una expresión inválida),
                 // muestra "Error" en el display.
@@ -29,7 +29,7 @@
             }
         };
     })();
-
+//Vaya a comer a las 2:00 de la mañana pizza🍕
     // Función anónima para limpiar el contenido del display
     // Esta función simplemente limpia cualquier contenido presente en el display.
     const limpiar = (function() {
