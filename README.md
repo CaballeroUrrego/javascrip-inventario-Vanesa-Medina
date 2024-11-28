@@ -13,4 +13,4 @@ Verificando aqui esta el link de github de la enidencia: https://github.com/Caba
 
 
 1:31 /28/11/2024 los trabajos que pidio en html estan afuera de la carpeta junto a sus conexiones esto se hizo por comodidades
-![alt text](image.png)
+![alt text](img/image.png)
