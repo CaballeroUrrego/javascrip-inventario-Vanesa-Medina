@@ -41,3 +41,4 @@ Si la diferencia es de 0 a 7 días, el texto de dateSpan cambia a color rojo, y 
 addButton.addEventListener('click', addProduct): Este evento asocia el clic del botón "Agregar" con la función addProduct.
 productInput.addEventListener('keypress', function(e) {...}): Este evento detecta cuando el usuario presiona la tecla Enter mientras está en el campo de entrada. Si es Enter, también llama a addProduct para añadir el producto.
 
+1:31 /28/11/2024
