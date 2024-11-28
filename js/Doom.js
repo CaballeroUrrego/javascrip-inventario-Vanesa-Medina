@@ -29,7 +29,7 @@ function agregarElemento() {
         const li = document.createElement('li');
         li.textContent = nuevoItem;
 
-        // Creamos un botón para eliminar el elemento
+        // Creamos un js/Doom.jsbotón para eliminar el elemento
         const botonEliminar = document.createElement('button');
         botonEliminar.textContent = "Eliminar";
         botonEliminar.onclick = function() {
@@ -45,3 +45,4 @@ function agregarElemento() {
         document.getElementById('nuevo-item').value = "";
     }
 }
+
