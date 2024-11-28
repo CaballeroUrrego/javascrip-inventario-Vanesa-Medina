@@ -12,7 +12,11 @@ Verificando aqui esta el link de github de la enidencia: https://github.com/Caba
 
 
 
-1:31 /28/11/2024 los trabajos que pidio en html estan afuera de la carpeta junto a sus conexiones esto se hizo por comodidades
+1:31 /28/11/2024 los trabajos que pidio en html estan afuera de la carpeta junto a sus conexiones esto se hizo por comodidades de entorno de desarollo estan todas las guias de la 1 a las 6 
+
+
+
+28/11/24
 ![alt text](img/image.png)
 ![alt text](img/image2.png)
 ![alt text](img/image3.png)
